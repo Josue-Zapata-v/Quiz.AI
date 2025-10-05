@@ -1,0 +1,150 @@
+/* === Fondo general === */
+.result-container {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+}
+
+/* === Tarjeta principal === */
+.result-card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  max-width: 700px;
+  width: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
+/* === Título del quiz === */
+.result-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+/* === Mensaje === */
+.result-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 1.8rem;
+}
+
+/* === Puntaje === */
+.score-summary {
+  text-align: center;
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+/* === Calificación por letra === */
+.grade-a {
+  color: #16a34a;
+}
+.grade-b {
+  color: #22c55e;
+}
+.grade-c {
+  color: #eab308;
+}
+.grade-d {
+  color: #f97316;
+}
+.grade-f {
+  color: #ef4444;
+}
+
+/* === Lista de preguntas === */
+.result-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.result-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  background: #f9fafb;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+.result-item.correct {
+  border-left: 4px solid #16a34a;
+}
+.result-item.incorrect {
+  border-left: 4px solid #ef4444;
+}
+
+.result-item:hover {
+  background: #f3f4f6;
+}
+
+.emoji {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.choice-text {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.error-text {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+/* === Botón === */
+.btn-back {
+  background: #4f46e5;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 1.8rem auto 0;
+}
+
+.btn-back:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+}
+
+/* === Animaciones === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Sin resultados === */
+.no-result {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}

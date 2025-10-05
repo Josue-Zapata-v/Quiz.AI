@@ -1,0 +1,116 @@
+/* === Contenedor general === */
+.submitquiz-container {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+}
+
+/* === Tarjeta === */
+.submitquiz-card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  animation: fadeIn 0.5s ease;
+}
+
+/* === Título === */
+.submitquiz-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+/* === Descripción === */
+.submitquiz-desc {
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+/* === Bloque de pregunta === */
+.question-block {
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  background: #f9fafb;
+  border-left: 4px solid #6366f1;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.question-block:hover {
+  background: #f3f4f6;
+}
+
+.question-text {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+/* === Opciones === */
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.choice-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #374151;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.choice-option:hover {
+  background: #e0e7ff;
+}
+
+/* === Botón === */
+.submit-btn {
+  background: #4f46e5;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem 1.8rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #4338ca;
+  transform: translateY(-3px);
+}
+
+/* === Texto de carga === */
+.loading-text {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 3rem;
+  font-size: 1.1rem;
+}
+
+/* === Animación === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,108 @@
+/* === Contenedor principal === */
+.quizdetail-container {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+}
+
+/* === Tarjeta del detalle === */
+.quizdetail-card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  animation: fadeIn 0.5s ease;
+}
+
+/* === Títulos === */
+.quizdetail-title {
+  font-size: 2rem;
+  color: #111827;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.quizdetail-description {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* === Subtítulo de sección === */
+.quizdetail-subtitle {
+  color: #1e3a8a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* === Lista de preguntas === */
+.question-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2.5rem;
+}
+
+.question-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-left: 4px solid #6366f1;
+  border-radius: 8px;
+}
+
+.choice-list {
+  list-style: none;
+  margin: 0.5rem 0 0 1rem;
+  padding: 0;
+}
+
+.choice-item {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* === Botón de iniciar === */
+.start-quiz-btn {
+  display: inline-block;
+  background: #4f46e5;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.start-quiz-btn:hover {
+  background: #4338ca;
+  transform: translateY(-3px);
+}
+
+/* === Animación de entrada === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Texto de carga === */
+.loading-text {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 3rem;
+  font-size: 1.1rem;
+}

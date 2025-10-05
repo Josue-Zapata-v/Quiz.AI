@@ -1,0 +1,98 @@
+/* === Contenedor general === */
+.quizlist-container {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === Encabezado === */
+.quizlist-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1e1b4b;
+}
+
+.quizlist-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+/* === Grid de tarjetas === */
+.quizlist-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* === Tarjetas de quiz === */
+.quizlist-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  padding: 1.8rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quizlist-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* === Contenido del quiz === */
+.quiz-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-description {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 1.2rem;
+}
+
+/* === Botón === */
+.quiz-btn {
+  align-self: flex-start;
+  background: #4f46e5;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.quiz-btn:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+}
+
+/* === Estado vacío === */
+.quizlist-empty {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
