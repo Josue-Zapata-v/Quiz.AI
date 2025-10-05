@@ -1,4 +1,3 @@
-```markdown
 # 🧠 Quiz.AI – Guía completa de API de cuestionarios
 
 ## 🎯 Objetivo
@@ -20,6 +19,7 @@ Construir un sistema inteligente de gestión de cuestionarios que permita crear 
 - `quizzes/urls.py` → Rutas de la API.
 
 ### Ejemplos de uso
+
 Crear cuestionario:
 ```bash
 curl -X POST http://127.0.0.1:8000/api/v1/quizzes/ \
@@ -31,6 +31,8 @@ Listar cuestionarios:
 ```bash
 curl http://127.0.0.1:8000/api/v1/quizzes/
 ```
+
+Actualizar y eliminar cuestionarios usando PUT y DELETE.
 
 ---
 
@@ -48,6 +50,7 @@ curl http://127.0.0.1:8000/api/v1/quizzes/
 - `quizzes/urls.py` → Registro de nuevas rutas `/questions/` y `/choices/`.
 
 ### Ejemplos de uso
+
 Crear pregunta:
 ```bash
 curl -X POST http://127.0.0.1:8000/api/v1/questions/ \
@@ -92,6 +95,7 @@ curl http://127.0.0.1:8000/api/v1/choices/
 | 0–59%      | F    | 💪    | Try Again   |
 
 ### Ejemplos de uso
+
 Obtener cuestionario completo:
 ```bash
 curl http://127.0.0.1:8000/api/v1/quizzes/1/
@@ -129,4 +133,3 @@ Que la API ahora ofrece un flujo completo, desde la creación de quizzes hasta l
 ## 📝 Autor
 
 Josue Isai Zapata Villegas
-```
